@@ -1,0 +1,401 @@
+/* ================================
+   POPULAR / MENU
+================================ */
+
+.popular {
+  position: relative;
+  width: 100%;
+  padding: 45px 35px 70px;
+  box-sizing: border-box;
+
+  /* Premium two-tone background */
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(255, 193, 120, 0.32),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 85%,
+      rgba(255, 105, 135, 0.25),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #fff8ed 0%,
+      #fff1e7 48%,
+      #f9e9f1 100%
+    );
+
+  overflow: hidden;
+}
+/* Premium glossy shine */
+.popular::before {
+  content: "";
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  top: -280px;
+  left: -180px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.75) 0%,
+    rgba(255, 255, 255, 0.25) 35%,
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.popular::after {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -180px;
+  bottom: -220px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 180, 190, 0.28) 0%,
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+.popular > * {
+  position: relative;
+  z-index: 1;
+}
+/* ================================
+   OUR MENU HEADING
+================================ */
+
+.popular > h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  color: #222;
+
+  margin: 0 auto 45px;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.popular > h2::after {
+  content: "";
+  display: block;
+
+  width: 60px;
+  height: 3px;
+
+  margin: 10px auto 0;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #ff5722,
+    #ff9a62
+  );
+
+  box-shadow: 0 3px 10px rgba(255, 87, 34, 0.25);
+}
+/* ================================
+   MENU SECTION
+================================ */
+
+.menu-section {
+  max-width: 1250px;
+  margin: 0 auto 55px;
+}
+
+/* Section heading */
+
+.menu-section-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 30px;
+
+  font-size: 25px;
+  font-weight: 800;
+  color: #222;
+
+  text-transform: capitalize;
+}
+
+/* Lines around heading */
+
+.menu-section-title::before,
+.menu-section-title::after {
+  content: "";
+  height: 1px;
+  background: #ddd;
+  flex: 1;
+  max-width: 220px;
+}
+
+.menu-section-title::before {
+  margin-right: 22px;
+}
+
+.menu-section-title::after {
+  margin-left: 22px;
+}
+
+/* Small orange accent */
+
+.menu-section-title::first-letter {
+  color: #ff5722;
+}
+
+/* ================================
+   FOOD GRID
+================================ */
+
+.popular-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* ================================
+   FOOD CARD
+================================ */
+
+.popular-container > * {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.popular-container > *:hover {
+  transform: translateY(-6px);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+  .popular-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .popular {
+    padding: 40px 25px 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .popular-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .popular > h2 {
+    font-size: 29px;
+  }
+
+  .menu-section-title {
+    font-size: 22px;
+  }
+
+  .menu-section-title::before,
+  .menu-section-title::after {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 520px) {
+  .popular {
+    padding: 30px 15px 50px;
+  }
+
+  .popular-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .popular > h2 {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .menu-section {
+    margin-bottom: 40px;
+  }
+
+  .menu-section-title {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .menu-section-title::before,
+  .menu-section-title::after {
+    max-width: 45px;
+  }
+
+  .menu-section-title::before {
+    margin-right: 12px;
+  }
+
+  .menu-section-title::after {
+    margin-left: 12px;
+  }
+}
+/* =================================
+   PREMIUM FOOD CARDS
+================================= */
+
+.food-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card hover */
+
+.food-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: #f0c5b8;
+}
+
+/* =================================
+   FOOD IMAGE
+================================= */
+
+.food-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.food-card:hover img {
+  transform: scale(1.04);
+}
+
+/* =================================
+   FOOD NAME
+================================= */
+
+.food-card h3 {
+  margin: 18px 18px 7px;
+
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  color: #222;
+
+  min-height: 48px;
+}
+
+/* =================================
+   PRICE
+================================= */
+
+.food-card p {
+  margin: 0 18px 16px;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  color: #ff5722;
+}
+
+/* =================================
+   ADD TO CART
+================================= */
+
+.food-card button {
+  margin: auto 18px 18px;
+
+  width: calc(100% - 36px);
+
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff5722;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.food-card button:hover {
+  background: #e64a19;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(255, 87, 34, 0.25);
+}
+
+.food-card button:active {
+  transform: translateY(0);
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 520px) {
+
+  .food-card {
+    border-radius: 15px;
+  }
+
+  .food-card img {
+    height: 220px;
+  }
+
+  .food-card h3 {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .food-card p {
+    font-size: 19px;
+  }
+
+  .food-card button {
+    padding: 11px;
+  }
+}

@@ -1,0 +1,896 @@
+/* =================================
+   Y&Y VEG GRILL - PREMIUM CHECKOUT
+================================= */
+
+.checkout-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  padding: 55px 20px 80px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(255, 170, 90, 0.22),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(233, 30, 99, 0.15),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #fffaf5 0%,
+      #fff0e7 50%,
+      #f9edf2 100%
+    );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #222;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glossy background */
+
+.checkout-page::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: -250px;
+  left: -180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.85),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.checkout-page::after {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  right: -220px;
+  bottom: -180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 150, 170, 0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.checkout-page h1 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  font-size: clamp(32px, 5vw, 48px);
+
+  font-weight: 900;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff5722,
+      #e91e63
+    );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.checkout-page > h2 {
+  position: relative;
+  z-index: 2;
+
+  margin: 8px 0 30px;
+
+  color: #555;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* =================================
+   FORM INPUTS
+================================= */
+
+.checkout-page > input,
+.checkout-page > textarea {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 600px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 14px;
+
+  padding: 15px 17px;
+
+  border: 1px solid rgba(0, 0, 0, 0.07);
+
+  border-radius: 13px;
+
+  outline: none;
+
+  background:
+    rgba(255, 255, 255, 0.86);
+
+  color: #333;
+
+  font-size: 15px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.045);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.checkout-page > input::placeholder,
+.checkout-page > textarea::placeholder {
+  color: #999;
+}
+
+.checkout-page > input:focus,
+.checkout-page > textarea:focus {
+  border-color: rgba(255, 87, 34, 0.45);
+
+  box-shadow:
+    0 0 0 4px rgba(255, 87, 34, 0.08),
+    0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-page > textarea {
+  min-height: 105px;
+
+  resize: vertical;
+
+  font-family: inherit;
+}
+
+
+/* =================================
+   PAYMENT
+================================= */
+
+.checkout-page > h3 {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: 20px 0 12px;
+
+  color: #333;
+
+  font-size: 17px;
+}
+
+.checkout-page > label {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 600px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 8px;
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 255, 255, 0.72);
+
+  color: #444;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.035);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.checkout-page > label:hover {
+  background: white;
+
+  transform: translateX(3px);
+}
+
+.checkout-page > label input {
+  accent-color: #ff5722;
+
+  margin-right: 9px;
+}
+
+
+/* =================================
+   DIVIDER
+================================= */
+
+.checkout-page > hr {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 25px 0;
+
+  border: none;
+
+  border-top:
+    1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* =================================
+   ORDER SUMMARY
+================================= */
+
+.checkout-page > h2:nth-of-type(2) {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 600px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 15px;
+
+  padding: 20px 22px;
+
+  border-radius: 18px 18px 0 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff5722,
+      #e91e63
+    );
+
+  color: white;
+
+  font-size: 22px;
+
+  box-shadow:
+    0 8px 22px rgba(255, 87, 34, 0.18);
+}
+
+
+/* Cart items */
+
+.checkout-page > h2:nth-of-type(2) ~ div {
+  width: 100%;
+  max-width: 600px;
+
+  box-sizing: border-box;
+
+  padding: 12px 22px;
+
+  background:
+    rgba(255, 255, 255, 0.84);
+}
+
+.checkout-page > h2:nth-of-type(2) ~ div span {
+  color: #444;
+
+  font-size: 14px;
+}
+
+
+/* =================================
+   TOTALS
+================================= */
+
+.checkout-page > h3 {
+  color: #555;
+}
+
+.checkout-page > h3:last-of-type {
+  font-size: 19px;
+
+  color: #222;
+}
+
+
+/* =================================
+   PLACE ORDER
+================================= */
+
+.checkout-btn {
+  position: relative;
+  z-index: 3;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin-top: 22px;
+
+  padding: 16px 22px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff5722,
+      #e91e63
+    );
+
+  font-size: 16px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 25px rgba(255, 87, 34, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 32px rgba(255, 87, 34, 0.32);
+}
+
+.checkout-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  .checkout-page {
+    padding:
+      40px 15px 60px;
+  }
+
+  .checkout-page h1 {
+    font-size: 35px;
+  }
+
+  .checkout-page > h2 {
+    font-size: 18px;
+
+    margin-bottom: 24px;
+  }
+
+  .checkout-page > input,
+  .checkout-page > textarea {
+    padding: 14px;
+
+    font-size: 14px;
+  }
+
+  .checkout-page > label {
+    padding: 12px;
+  }
+
+  .checkout-btn {
+    padding: 15px;
+  }
+}
+/* =========================================
+   PAYMENT SECTION
+========================================= */
+
+.payment-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   PAYMENT OPTIONS
+========================================= */
+
+.payment-options {
+  padding: 22px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid rgba(255, 87, 34, 0.10);
+
+  box-shadow:
+    0 10px 30px rgba(70, 40, 30, 0.07);
+
+  backdrop-filter: blur(12px);
+}
+
+.payment-options > h3 {
+  margin: 0 0 14px;
+
+  color: #2c2421;
+
+  font-size: 18px;
+}
+
+
+/* =========================================
+   PAYMENT CARD
+========================================= */
+
+.payment-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  min-height: 52px;
+
+  margin-bottom: 9px;
+
+  padding: 10px 13px;
+
+  border: 1px solid #eee4df;
+
+  border-radius: 14px;
+
+  background: #fff;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.payment-card:last-child {
+  margin-bottom: 0;
+}
+
+.payment-card:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(255, 87, 34, 0.35);
+
+  box-shadow:
+    0 7px 18px rgba(255, 87, 34, 0.08);
+}
+
+.payment-card.selected {
+  border-color: #ff7043;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff7f2,
+      #fffafb
+    );
+
+  box-shadow:
+    0 7px 20px rgba(255, 87, 34, 0.12);
+}
+
+
+/* Radio */
+
+.payment-card input {
+  accent-color: #ff5722;
+
+  width: 17px;
+  height: 17px;
+
+  flex-shrink: 0;
+}
+
+
+/* Icon */
+
+.payment-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #fff0e9;
+
+  font-size: 18px;
+}
+
+
+/* Text */
+
+.payment-card > span:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.payment-card strong {
+  color: #302723;
+
+  font-size: 14px;
+}
+
+.payment-card small {
+  color: #8b7c75;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   PAYMENT NOTICE
+========================================= */
+
+.payment-notice {
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 87, 34, 0.16);
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff7ef,
+      #fff1f5
+    );
+
+  box-shadow:
+    0 10px 30px rgba(70, 40, 30, 0.07);
+
+  animation: noticeFloat 3.5s ease-in-out infinite;
+}
+
+
+/* Moving shine */
+
+.notice-shine {
+  position: absolute;
+
+  top: -80%;
+
+  left: -100px;
+
+  width: 80px;
+  height: 260%;
+
+  transform: rotate(25deg);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.7),
+      transparent
+    );
+
+  animation: noticeShine 4s ease-in-out infinite;
+
+  pointer-events: none;
+}
+
+
+/* Notice icon */
+
+.notice-icon {
+  position: relative;
+  z-index: 1;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  box-shadow:
+    0 6px 16px rgba(255, 87, 34, 0.10);
+
+  font-size: 23px;
+
+  animation: iconPulse 2.5s ease-in-out infinite;
+}
+
+
+/* Notice content */
+
+.notice-content {
+  position: relative;
+  z-index: 1;
+}
+
+.notice-content h3 {
+  margin: 0 0 8px;
+
+  color: #d84315;
+
+  font-size: 18px;
+}
+
+.notice-content p {
+  margin: 0 0 7px;
+
+  color: #574a45;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+.notice-content span {
+  color: #8a7770;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes noticeFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes noticeShine {
+  0% {
+    left: -120px;
+  }
+
+  45%,
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes iconPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .payment-section {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-notice {
+    min-height: auto;
+
+    padding: 20px;
+  }
+
+}
+/* =========================================
+   SPECIAL INSTRUCTIONS
+========================================= */
+
+.instruction-section {
+  margin: 25px 0;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    #fffaf7,
+    #ffffff
+  );
+
+  border: 1px solid #eee2dc;
+
+  box-shadow:
+    0 8px 22px rgba(50, 30, 20, 0.06);
+}
+
+.instruction-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+}
+
+.instruction-heading > span {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #fff0e9;
+
+  font-size: 21px;
+}
+
+.instruction-heading h3 {
+  margin: 0;
+
+  color: #302522;
+
+  font-size: 16px;
+}
+
+.instruction-heading p {
+  margin: 4px 0 0;
+
+  color: #91847d;
+
+  font-size: 12px;
+}
+
+.instruction-input {
+  width: 100%;
+
+  min-height: 90px;
+
+  box-sizing: border-box;
+
+  resize: vertical;
+
+  padding: 14px 15px;
+
+  border: 1px solid #e7ddd7;
+
+  border-radius: 13px;
+
+  outline: none;
+
+  background: #fff;
+
+  color: #302522;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.instruction-input::placeholder {
+  color: #aaa09a;
+}
+
+.instruction-input:focus {
+  border-color: #ff7043;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 112, 67, 0.10);
+}
+
+.instruction-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 8px;
+
+  color: #9b8e87;
+
+  font-size: 11px;
+}
+
+.instruction-footer span {
+  color: #ff7043;
+
+  font-weight: 700;
+}

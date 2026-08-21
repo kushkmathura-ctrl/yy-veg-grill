@@ -1,0 +1,57 @@
+import "./Popular.css";
+
+function FoodCard({ name, price, image, setCart, setToast }) {
+
+  const addToCart = () => {
+
+    setCart((prevCart) => {
+      const existingItem = prevCart.find(
+        (item) => item.name === name
+      );
+
+      if (existingItem) {
+        return prevCart.map((item) =>
+          item.name === name
+            ? {
+                ...item,
+                quantity: item.quantity + 1,
+              }
+            : item
+        );
+      }
+
+      return [
+        ...prevCart,
+        {
+          name,
+          price,
+          image,
+          quantity: 1,
+        },
+      ];
+    });
+
+    // Toast Notification
+    setToast(`✅ ${name} added to cart`);
+
+    setTimeout(() => {
+      setToast("");
+    }, 2000);
+  };
+
+  return (
+    <div className="food-card">
+      <img src={image} alt={name} />
+
+      <h3>{name}</h3>
+
+      <p>₹{price}</p>
+
+      <button onClick={addToCart}>
+        Add to Cart
+      </button>
+    </div>
+  );
+}
+
+export default FoodCard;

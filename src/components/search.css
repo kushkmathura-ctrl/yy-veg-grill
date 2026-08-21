@@ -1,0 +1,16 @@
+.search{
+    padding:40px;
+    background:#111;
+    display:flex;
+    justify-content:center;
+}
+
+.search input{
+    width:500px;
+    max-width:90%;
+    padding:15px 20px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:18px;
+}

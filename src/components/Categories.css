@@ -1,0 +1,158 @@
+/* ================================
+   CATEGORIES
+================================ */
+
+.categories {
+  width: 100%;
+  padding: 35px 35px 45px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+}
+
+.categories h2 {
+  text-align: center;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  color: #222;
+
+  margin: 0 0 28px;
+
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   CATEGORY CONTAINER
+================================ */
+
+.category-container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 18px;
+}
+
+/* ================================
+   CATEGORY CARD
+================================ */
+
+.category-container .card {
+  position: relative;
+
+  min-height: 105px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+/* Emoji */
+
+.category-container .card:first-line {
+  font-size: 28px;
+}
+
+/* Heading */
+
+.category-container .card h3 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #333;
+}
+
+/* Hover */
+
+.category-container .card:hover {
+  transform: translateY(-5px);
+
+  border-color: #ffb08f;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Active */
+
+.category-container .card.active {
+  background: linear-gradient(
+    135deg,
+    #ff5722,
+    #ff7b4d
+  );
+
+  border-color: transparent;
+
+  box-shadow:
+    0 8px 22px rgba(255, 87, 34, 0.25);
+
+  transform: translateY(-3px);
+}
+
+.category-container .card.active h3 {
+  color: #ffffff;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+  .category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .categories {
+    padding: 30px 15px 35px;
+  }
+
+  .categories h2 {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .category-container .card {
+    min-height: 95px;
+  }
+}
+
+@media (max-width: 380px) {
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-container .card h3 {
+    font-size: 14px;
+  }
+}
