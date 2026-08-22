@@ -25,8 +25,8 @@ function Admin() {
   const loadOrders = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5001/api/orders"
-      );
+  `${import.meta.env.VITE_API_URL}/api/orders`
+);
 
       if (!res.ok) {
         throw new Error("Failed to load orders");
@@ -120,8 +120,8 @@ function Admin() {
 
   useEffect(() => {
     const socket = io(
-      "http://localhost:5001"
-    );
+  import.meta.env.VITE_API_URL
+);
 
     socket.on("connect", () => {
       console.log(
@@ -289,7 +289,7 @@ function Admin() {
  const updateStatus = async (id, status) => {
   try {
     const res = await fetch(
-      `http://localhost:5001/api/orders/${id}`,
+  `${import.meta.env.VITE_API_URL}/api/orders/${id}`,
       {
         method: "PUT",
         headers: {

@@ -14,7 +14,7 @@ function TrackOrder() {
   const loadOrder = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5001/api/orders/${orderId}`
+        `${import.meta.env.VITE_API_URL}/api/orders/${orderId}`
       );
 
       const data = await res.json();
@@ -30,7 +30,9 @@ function TrackOrder() {
 
     loadOrder();
 
-    const socket = io("http://localhost:5001");
+    const socket = io(
+  import.meta.env.VITE_API_URL
+);
 
     socket.on("connect", () => {
       console.log("🟢 Track Order Socket Connected");

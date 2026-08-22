@@ -24,12 +24,12 @@ function Login() {
       setError("");
 
       const response = await axios.post(
-        "http://localhost:5001/api/admin/login",
-        {
-          username,
-          password,
-        }
-      );
+  `${import.meta.env.VITE_API_URL}/api/admin/login`,
+  {
+    username,
+    password,
+  }
+);
 
       if (response.data.success) {
         localStorage.setItem(

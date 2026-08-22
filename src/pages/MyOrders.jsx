@@ -16,8 +16,8 @@ function MyOrders() {
       }
 
       const res = await fetch(
-        `http://localhost:5001/api/orders/customer/${phone}`
-      );
+  `${import.meta.env.VITE_API_URL}/api/orders/customer/${phone}`
+);
 
       const data = await res.json();
 
