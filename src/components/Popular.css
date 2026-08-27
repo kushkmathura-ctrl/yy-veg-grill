@@ -241,40 +241,70 @@
 @media (max-width: 520px) {
 
   .popular {
-    padding: 22px 8px 35px;
+    padding: 25px 10px 40px;
   }
 
+  .popular > h2 {
+    font-size: 25px;
+    margin-bottom: 28px;
+  }
+
+  .menu-section {
+    margin-bottom: 30px;
+  }
+
+  .menu-section-title {
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+
+  .menu-section-title::before,
+  .menu-section-title::after {
+    max-width: 45px;
+  }
+
+  .menu-section-title::before {
+    margin-right: 10px;
+  }
+
+  .menu-section-title::after {
+    margin-left: 10px;
+  }
+
+  /* ⭐ MOBILE PAR 2 ITEMS SIDE-BY-SIDE */
   .popular-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 12px;
   }
 
+  /* ⭐ Smaller cards */
   .food-card {
-    border-radius: 10px;
+    border-radius: 13px;
   }
 
+  /* ⭐ Image height reduced */
   .food-card img {
-    height: 105px;
+    height: 135px;
   }
 
   .food-card h3 {
-    font-size: 14px;
-    line-height: 1.2;
-    margin: 8px 8px 3px;
-    min-height: 34px;
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 11px 10px 5px;
+    min-height: 38px;
   }
 
   .food-card p {
-    font-size: 15px;
-    margin: 0 8px 7px;
+    font-size: 17px;
+    margin: 0 10px 10px;
   }
 
   .food-card button {
-    margin: auto 8px 8px;
-    width: calc(100% - 16px);
-    padding: 7px 4px;
-    font-size: 12px;
-    border-radius: 7px;
+    margin: auto 10px 10px;
+    width: calc(100% - 20px);
+    padding: 9px 5px;
+    font-size: 13px;
+    border-radius: 8px;
   }
 }
 /* =================================
