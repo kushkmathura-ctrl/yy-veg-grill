@@ -188,7 +188,12 @@
    RESPONSIVE
 ================================ */
 
+/* =================================
+   RESPONSIVE
+================================= */
+
 @media (max-width: 1100px) {
+
   .popular-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -198,10 +203,20 @@
   }
 }
 
+
+/* =================================
+   TABLET
+================================= */
+
 @media (max-width: 800px) {
+
   .popular-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
+  }
+
+  .popular {
+    padding: 35px 20px 55px;
   }
 
   .popular > h2 {
@@ -218,28 +233,29 @@
   }
 }
 
-@media (max-width: 520px) {
-  .popular {
-    padding: 30px 15px 50px;
-  }
 
-  .popular-container {
-    grid-template-columns: 1fr;
-    gap: 18px;
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 520px) {
+
+  .popular {
+    padding: 25px 10px 40px;
   }
 
   .popular > h2 {
-    font-size: 26px;
-    margin-bottom: 35px;
+    font-size: 25px;
+    margin-bottom: 28px;
   }
 
   .menu-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .menu-section-title {
-    font-size: 20px;
-    margin-bottom: 22px;
+    font-size: 19px;
+    margin-bottom: 18px;
   }
 
   .menu-section-title::before,
@@ -248,11 +264,47 @@
   }
 
   .menu-section-title::before {
-    margin-right: 12px;
+    margin-right: 10px;
   }
 
   .menu-section-title::after {
-    margin-left: 12px;
+    margin-left: 10px;
+  }
+
+  /* ⭐ MOBILE PAR 2 ITEMS SIDE-BY-SIDE */
+  .popular-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  /* ⭐ Smaller cards */
+  .food-card {
+    border-radius: 13px;
+  }
+
+  /* ⭐ Image height reduced */
+  .food-card img {
+    height: 135px;
+  }
+
+  .food-card h3 {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 11px 10px 5px;
+    min-height: 38px;
+  }
+
+  .food-card p {
+    font-size: 17px;
+    margin: 0 10px 10px;
+  }
+
+  .food-card button {
+    margin: auto 10px 10px;
+    width: calc(100% - 20px);
+    padding: 9px 5px;
+    font-size: 13px;
+    border-radius: 8px;
   }
 }
 /* =================================

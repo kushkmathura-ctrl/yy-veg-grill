@@ -64,7 +64,10 @@
     #e91e63
   );
 
+  background-clip: text;
   -webkit-background-clip: text;
+
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -204,5 +207,92 @@
     font-size: 12px;
 
     white-space: nowrap;
+  }
+}
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+.mobile-menu-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  color: #222;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+    padding: 12px 18px;
+    min-height: 70px;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .nav-left h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* Show hamburger */
+  .mobile-menu-btn {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* Mobile dropdown */
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    z-index: 9999;
+  }
+
+  .mobile-menu button {
+    border: none;
+    background: white;
+    padding: 13px 12px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .mobile-menu button:hover {
+    background: #fff1eb;
   }
 }
