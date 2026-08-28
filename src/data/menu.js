@@ -205,27 +205,27 @@ setSection("DESSERTS");
 addItem(
   "Flavoured Ice Cream (2 Scoop)",
   60,
-  "Desserts",
+  "Fast Food",
   FlavouredicecreamImage
 );
 addItem(
   "Gulab Jamun",
   25,
-  "Desserts",
+  "Fast Food",
   gulabjamunImage
 );
 
 setSection("TEA");
 
-addItem("Regular Tea", 30, "Beverages", TeaImage);
-addItem("Ginger Tea", 30, "Beverages", TeaImage);
-addItem("Masala Tea", 30, "Beverages", TeaImage);
+addItem("Regular Tea", 30, "Fast Food", TeaImage);
+addItem("Ginger Tea", 30, "Fast Food", TeaImage);
+addItem("Masala Tea", 30, "Fast Food", TeaImage);
 
 setSection("HOT COFFEE");
 
-addItem("Cappuccino", 60, "Beverages", CappuccinoImage);
-addItem("Cafe Mocha", 70, "Beverages", cafemochaImage);
-addItem("Hot Chocolate", 70, "Beverages", hotchocolateImage);
+addItem("Cappuccino", 60, "Fast Food", CappuccinoImage);
+addItem("Cafe Mocha", 70, "Fast Food", cafemochaImage);
+addItem("Hot Chocolate", 70, "Fast Food", hotchocolateImage);
 
 setSection("PASTA");
 
@@ -287,28 +287,25 @@ addItem(
   "Normal Thali - Dal Fry, Matar Paneer, Rice, 2 Roti, Salad, Raita",
   190,
   "Indian",
-  indianImage
 );
 
 addItem(
   "Normal Thali - Shahi Paneer, Dal Makhani, Tawa Chaap, Rice, 2 Butter Roti, Raita, Papad",
   240,
   "Indian",
-  indianImage
 );
 
 addItem(
   "Special Thali - Mix Veg., Dal Makhani, Sahi Paneer, Rice, Salad, Sweet (1Pc.), Raita, Papad, 1 Luccha, 1 Naan",
   290,
   "Indian",
-  indianImage
 );
 
 setSection("INDIAN DISHES");
 
-addItem("Paneer Angara (Full)", 350, "Indian", indianImage);
-addItem("Paneer Jawala (Full)", 350, "Indian", indianImage);
-addItem("Sev Tamatar (Full)", 220, "Indian", indianImage);
+addItem("Paneer Angara (Full)", 350, indianImage);
+addItem("Paneer Jawala (Full)", 350, indianImage);
+addItem("Sev Tamatar (Full)", 220, indianImage);
 
 addItem("Sarso ka sag (Seasonable) (Half)", 160, "Indian", indianImage);
 addItem("Sarso ka sag (Seasonable) (Full)", 270, "Indian", indianImage);
