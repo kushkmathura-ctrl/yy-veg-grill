@@ -301,141 +301,141 @@ addItem(
 
 setSection("INDIAN DISHES");
 
-addItem("Paneer Angara (Full)", 350, "Indian", indianImage);
-addItem("Paneer Jawala (Full)", 350, "Indian", indianImage);
-addItem("Sev Tamatar (Full)", 220, "Indian", indianImage);
+addItem("Paneer Angara (Full)", 350, "Indian");
+addItem("Paneer Jawala (Full)", 350, "Indian");
+addItem("Sev Tamatar (Full)", 220, "Indian");
 
-addItem("Sarso ka sag (Seasonable) (Half)", 160, "Indian", indianImage);
-addItem("Sarso ka sag (Seasonable) (Full)", 270, "Indian", indianImage);
+addItem("Sarso ka sag (Seasonable) (Half)", 160, "Indian");
+addItem("Sarso ka sag (Seasonable) (Full)", 270, "Indian");
 
-addItem("Dal Tadka (Half)", 120, "Indian", indianImage);
-addItem("Dal Tadka (Full)", 200, "Indian", indianImage);
+addItem("Dal Tadka (Half)", 120, "Indian");
+addItem("Dal Tadka (Full)", 200, "Indian");
 
-addItem("Dal Fry (Half)", 110, "Indian", indianImage);
-addItem("Dal Fry (Full)", 190, "Indian", indianImage);
+addItem("Dal Fry (Half)", 110, "Indian");
+addItem("Dal Fry (Full)", 190, "Indian");
 
-addItem("Dal Makhani (Half)", 140, "Indian", indianImage);
-addItem("Dal Makhani (Full)", 240, "Indian", indianImage);
+addItem("Dal Makhani (Half)", 140, "Indian");
+addItem("Dal Makhani (Full)", 240, "Indian");
 
-addItem("Dal Punjabi (Half)", 160, "Indian", indianImage);
-addItem("Dal Punjabi (Full)", 240, "Indian", indianImage);
+addItem("Dal Punjabi (Half)", 160, "Indian");
+addItem("Dal Punjabi (Full)", 240, "Indian");
 
-addItem("Dal Bukhara (Full)", 240, "Indian", indianImage);
-addItem("Amritsari Dal (Full)", 240, "Indian", indianImage);
+addItem("Dal Bukhara (Full)", 240, "Indian");
+addItem("Amritsari Dal (Full)", 240, "Indian");
 
-addItem("Sahi Paneer (Half)", 160, "Indian", indianImage);
-addItem("Sahi Paneer (Full)", 260, "Indian", indianImage);
+addItem("Sahi Paneer (Half)", 160, "Indian");
+addItem("Sahi Paneer (Full)", 260, "Indian");
 
-addItem("Matter Paneer (Half)", 140, "Indian", indianImage);
-addItem("Matter Paneer (Full)", 240, "Indian", indianImage);
+addItem("Matter Paneer (Half)", 140, "Indian");
+addItem("Matter Paneer (Full)", 240, "Indian");
 
-addItem("Kadhai Paneer (Half)", 170, "Indian", indianImage);
-addItem("Kadhai Paneer (Full)", 290, "Indian", indianImage);
+addItem("Kadhai Paneer (Half)", 170, "Indian");
+addItem("Kadhai Paneer (Full)", 290, "Indian");
 
-addItem("Tawa Paneer (Half)", 160, "Indian", indianImage);
-addItem("Tawa Paneer (Full)", 280, "Indian", indianImage);
+addItem("Tawa Paneer (Half)", 160, "Indian");
+addItem("Tawa Paneer (Full)", 280, "Indian");
 
-addItem("Paneer Butter masala (Half)", 160, "Indian", indianImage);
-addItem("Paneer Butter masala (Full)", 280, "Indian", indianImage);
+addItem("Paneer Butter masala (Half)", 160, "Indian");
+addItem("Paneer Butter masala (Full)", 280, "Indian");
 
-addItem("Paneer do Pyaza (Half)", 160, "Indian", indianImage);
-addItem("Paneer do Pyaza (Full)", 280, "Indian", indianImage);
+addItem("Paneer do Pyaza (Half)", 160, "Indian");
+addItem("Paneer do Pyaza (Full)", 280, "Indian");
 
-addItem("Paneer Lawabdar (Half)", 170, "Indian", indianImage);
-addItem("Paneer Lawabdar (Full)", 290, "Indian", indianImage);
+addItem("Paneer Lawabdar (Half)", 170, "Indian");
+addItem("Paneer Lawabdar (Full)", 290, "Indian");
 
-addItem("Hydrabadi Paneer (Half)", 170, "Indian", indianImage);
-addItem("Hydrabadi Paneer (Full)", 290, "Indian", indianImage);
+addItem("Hydrabadi Paneer (Half)", 170, "Indian");
+addItem("Hydrabadi Paneer (Full)", 290, "Indian");
 
-addItem("Paneer Pasanda (Full)", 290, "Indian", indianImage);
+addItem("Paneer Pasanda (Full)", 290, "Indian");
 
-addItem("Mix Vegetable (Half)", 140, "Indian", indianImage);
-addItem("Mix Vegetable (Full)", 240, "Indian", indianImage);
+addItem("Mix Vegetable (Half)", 140, "Indian");
+addItem("Mix Vegetable (Full)", 240, "Indian");
 
-addItem("Mushroom do Pyaza (Half)", 170, "Indian", indianImage);
-addItem("Mushroom do Pyaza (Full)", 290, "Indian", indianImage);
+addItem("Mushroom do Pyaza (Half)", 170, "Indian");
+addItem("Mushroom do Pyaza (Full)", 290, "Indian");
 
-addItem("Mix Veg. Jaipuri (Full)", 250, "Indian", indianImage);
+addItem("Mix Veg. Jaipuri (Full)", 250, "Indian");
 
-addItem("Dum Aloo (Half)", 150, "Indian", indianImage);
-addItem("Dum Aloo (Full)", 240, "Indian", indianImage);
+addItem("Dum Aloo (Half)", 150, "Indian");
+addItem("Dum Aloo (Full)", 240, "Indian");
 
-addItem("Jeera Aloo (Full)", 190, "Indian", indianImage);
-addItem("Kashmiri Dum Aloo (Full)", 290, "Indian", indianImage);
+addItem("Jeera Aloo (Full)", 190, "Indian");
+addItem("Kashmiri Dum Aloo (Full)", 290, "Indian");
 
-addItem("Matter Mushroom (Half)", 170, "Indian", indianImage);
-addItem("Matter Mushroom (Full)", 290, "Indian", indianImage);
+addItem("Matter Mushroom (Half)", 170, "Indian");
+addItem("Matter Mushroom (Full)", 290, "Indian");
 
-addItem("Malai Kofta (Red Gravy) (Half)", 170, "Indian", indianImage);
-addItem("Malai Kofta (Red Gravy) (Full)", 280, "Indian", indianImage);
+addItem("Malai Kofta (Red Gravy) (Half)", 170, "Indian");
+addItem("Malai Kofta (Red Gravy) (Full)", 280, "Indian");
 
-addItem("Malai Kofta (White Gravy) (Half)", 180, "Indian", indianImage);
-addItem("Malai Kofta (White Gravy) (Full)", 290, "Indian", indianImage);
+addItem("Malai Kofta (White Gravy) (Half)", 180, "Indian");
+addItem("Malai Kofta (White Gravy) (Full)", 290, "Indian");
 
-addItem("Handee Paneer (Full)", 290, "Indian", indianImage);
+addItem("Handee Paneer (Full)", 290, "Indian");
 
-addItem("Palak Paneer (Half)", 160, "Indian", indianImage);
-addItem("Palak Paneer (Full)", 270, "Indian", indianImage);
+addItem("Palak Paneer (Half)", 160, "Indian");
+addItem("Palak Paneer (Full)", 270, "Indian");
 
-addItem("Paneer Methi malai (Half)", 170, "Indian", indianImage);
-addItem("Paneer Methi malai (Full)", 290, "Indian", indianImage);
+addItem("Paneer Methi malai (Half)", 170, "Indian");
+addItem("Paneer Methi malai (Full)", 290, "Indian");
 
-addItem("Sev Bhaji (Full)", 210, "Indian", indianImage);
+addItem("Sev Bhaji (Full)", 210, "Indian");
 
 setSection("TANDOORI ROLLS");
 
-addItem("Chatpati Chaap Roll (Half)", 160, "Indian", indianImage);
-addItem("Chatpati Chaap Roll (Full)", 280, "Indian", indianImage);
+addItem("Chatpati Chaap Roll (Half)", 160, "Indian");
+addItem("Chatpati Chaap Roll (Full)", 280, "Indian");
 
-addItem("Tandoori Chaap Roll (Half)", 160, "Indian", indianImage);
-addItem("Tandoori Chaap Roll (Full)", 280, "Indian", indianImage);
+addItem("Tandoori Chaap Roll (Half)", 160, "Indian");
+addItem("Tandoori Chaap Roll (Full)", 280, "Indian");
 
-addItem("Kabab Roll (Full)", 210, "Indian", indianImage);
+addItem("Kabab Roll (Full)", 210, "Indian");
 
-addItem("Malai Chaap Roll (Half)", 160, "Indian", indianImage);
-addItem("Malai Chaap Roll (Full)", 280, "Indian", indianImage);
+addItem("Malai Chaap Roll (Half)", 160, "Indian");
+addItem("Malai Chaap Roll (Full)", 280, "Indian");
 
-addItem("Mushroom Roll (Full)", 260, "Indian", indianImage);
+addItem("Mushroom Roll (Full)", 260, "Indian");
 
-addItem("Paneer Tikka Roll (Half)", 190, "Indian", indianImage);
-addItem("Paneer Tikka Roll (Full)", 300, "Indian", indianImage);
+addItem("Paneer Tikka Roll (Half)", 190, "Indian");
+addItem("Paneer Tikka Roll (Full)", 300, "Indian");
 
-addItem("Pudina Chaap Roll (Half)", 160, "Indian", indianImage);
-addItem("Pudina Chaap Roll (Full)", 290, "Indian", indianImage);
+addItem("Pudina Chaap Roll (Half)", 160, "Indian");
+addItem("Pudina Chaap Roll (Full)", 290, "Indian");
 
-addItem("Stuffed Chaap Roll (Half)", 180, "Indian", indianImage);
-addItem("Stuffed Chaap Roll (Full)", 290, "Indian", indianImage);
+addItem("Stuffed Chaap Roll (Half)", 180, "Indian");
+addItem("Stuffed Chaap Roll (Full)", 290, "Indian");
 
-addItem("Afgani Chaap Roll (Half)", 190, "Indian", indianImage);
-addItem("Afgani Chaap Roll (Full)", 300, "Indian", indianImage);
+addItem("Afgani Chaap Roll (Half)", 190, "Indian");
+addItem("Afgani Chaap Roll (Full)", 300, "Indian");
 
-addItem("Achari Chaap Roll (Half)", 160, "Indian", indianImage);
-addItem("Achari Chaap Roll (Full)", 290, "Indian", indianImage);
+addItem("Achari Chaap Roll (Half)", 160, "Indian");
+addItem("Achari Chaap Roll (Full)", 290, "Indian");
 
-addItem("Kashmiri Chaap Roll (Half)", 190, "Indian", indianImage);
-addItem("Kashmiri Chaap Roll (Full)", 300, "Indian", indianImage);
+addItem("Kashmiri Chaap Roll (Half)", 190, "Indian");
+addItem("Kashmiri Chaap Roll (Full)", 300, "Indian");
 
 setSection("SPECIAL VEG. GRILL");
 
-addItem("Spl. Veg. KFC Chhap (2pc.)", 150, "Indian", indianImage);
-addItem("Crispy Momos", 170, "Indian", indianImage);
-addItem("Paneer Crispy", 290, "Indian", indianImage);
-addItem("Stuff Crispy Chaap", 300, "Indian", indianImage);
+addItem("Spl. Veg. KFC Chhap (2pc.)", 150, "Indian");
+addItem("Crispy Momos", 170, "Indian");
+addItem("Paneer Crispy", 290, "Indian");
+addItem("Stuff Crispy Chaap", 300, "Indian");
 
 setSection("SOUPS");
 
-addItem("Cream or Tomato Soup", 90, "Indian", indianImage);
-addItem("Veg. Hot & Sour Soup", 90, "Indian", indianImage);
-addItem("Veg. Sweet Corn Soup", 100, "Indian", indianImage);
-addItem("Veg. Manchow Soup", 100, "Indian", indianImage);
+addItem("Cream or Tomato Soup", 90, "Indian");
+addItem("Veg. Hot & Sour Soup", 90, "Indian");
+addItem("Veg. Sweet Corn Soup", 100, "Indian");
+addItem("Veg. Manchow Soup", 100, "Indian");
 
 setSection("RAITA");
 
-addItem("Plain Raita", 90, "Indian", indianImage);
-addItem("Boondi Raita", 100, "Indian", indianImage);
-addItem("Mix Raita", 110, "Indian", indianImage);
-addItem("Plain Curd", 90, "Indian", indianImage);
-addItem("Papad", 20, "Indian", indianImage);
+addItem("Plain Raita", 90, "Indian");
+addItem("Boondi Raita", 100, "Indian");
+addItem("Mix Raita", 110, "Indian");
+addItem("Plain Curd", 90, "Indian");
+addItem("Papad", 20, "Indian");
 
 setSection("CHINESE");
 
@@ -470,152 +470,152 @@ addItem("Paneer Fry Momos", 140, "Chinese", chineseImage);
 
 setSection("TANDOORI ROTI");
 
-addItem("Plain Roti", 12, "Indian", indianImage);
-addItem("Butter Roti", 15, "Indian", indianImage);
-addItem("Rumali Roti", 20, "Indian", indianImage);
-addItem("Missi Roti", 50, "Indian", indianImage);
-addItem("Makka Roti", 50, "Indian", indianImage);
+addItem("Plain Roti", 12, "Indian");
+addItem("Butter Roti", 15, "Indian");
+addItem("Rumali Roti", 20, "Indian");
+addItem("Missi Roti", 50, "Indian");
+addItem("Makka Roti", 50, "Indian");
 
 setSection("TANDOORI NAAN");
 
-addItem("Plain Naan", 40, "Indian", indianImage);
-addItem("Butter Naan", 45, "Indian", indianImage);
-addItem("Garlic Naan", 65, "Indian", indianImage);
-addItem("Stuff Naan", 75, "Indian", indianImage);
-addItem("Gobhi Naan", 75, "Indian", indianImage);
-addItem("Paneer Naan", 75, "Indian", indianImage);
-addItem("Aloo Naan", 65, "Indian", indianImage);
-addItem("Onion Naan", 65, "Indian", indianImage);
+addItem("Plain Naan", 40, "Indian");
+addItem("Butter Naan", 45, "Indian");
+addItem("Garlic Naan", 65, "Indian");
+addItem("Stuff Naan", 75, "Indian");
+addItem("Gobhi Naan", 75, "Indian");
+addItem("Paneer Naan", 75, "Indian");
+addItem("Aloo Naan", 65, "Indian");
+addItem("Onion Naan", 65, "Indian");
 
 setSection("TANDOORI PARATHA");
 
-addItem("Aloo Paratha", 70, "Indian", indianImage);
-addItem("Aloo Onion paratha", 80, "Indian", indianImage);
-addItem("Mix Paratha", 80, "Indian", indianImage);
-addItem("Gobi Paratha", 80, "Indian", indianImage);
-addItem("Paneer Paratha", 80, "Indian", indianImage);
-addItem("Onion Paratha", 70, "Indian", indianImage);
-addItem("Lachha Paratha", 60, "Indian", indianImage);
-addItem("Hydrabadi Paratha", 80, "Indian", indianImage);
-addItem("Cheese paratha", 110, "Indian", indianImage);
-addItem("papad Paratha", 110, "Indian", indianImage);
+addItem("Aloo Paratha", 70, "Indian");
+addItem("Aloo Onion paratha", 80, "Indian");
+addItem("Mix Paratha", 80, "Indian");
+addItem("Gobi Paratha", 80, "Indian");
+addItem("Paneer Paratha", 80, "Indian");
+addItem("Onion Paratha", 70, "Indian");
+addItem("Lachha Paratha", 60, "Indian");
+addItem("Hydrabadi Paratha", 80, "Indian");
+addItem("Cheese paratha", 110, "Indian");
+addItem("papad Paratha", 110, "Indian");
 
 setSection("SALADS");
 
-addItem("Onion Salaad", 80, "Indian", indianImage);
-addItem("Tomato Salaad", 80, "Indian", indianImage);
-addItem("Green Salaad", 100, "Indian", indianImage);
-addItem("Mix Salaad", 100, "Indian", indianImage);
+addItem("Onion Salaad", 80, "Indian");
+addItem("Tomato Salaad", 80, "Indian");
+addItem("Green Salaad", 100, "Indian");
+addItem("Mix Salaad", 100, "Indian");
 
 setSection("TAWA");
 
-addItem("Tawa Chaap Masala (Half)", 160, "Indian", indianImage);
-addItem("Tawa Chaap Masala (Full)", 240, "Indian", indianImage);
+addItem("Tawa Chaap Masala (Half)", 160, "Indian");
+addItem("Tawa Chaap Masala (Full)", 240, "Indian");
 
-addItem("Tawa Tikka Masala (Half)", 170, "Indian", indianImage);
-addItem("Tawa Tikka Masala (Full)", 290, "Indian", indianImage);
+addItem("Tawa Tikka Masala (Half)", 170, "Indian");
+addItem("Tawa Tikka Masala (Full)", 290, "Indian");
 
-addItem("Paneer Tikka Masala (Half)", 170, "Indian", indianImage);
-addItem("Paneer Tikka Masala (Full)", 290, "Indian", indianImage);
+addItem("Paneer Tikka Masala (Half)", 170, "Indian");
+addItem("Paneer Tikka Masala (Full)", 290, "Indian");
 
-addItem("Kathi Kabab (Full)", 280, "Indian", indianImage);
+addItem("Kathi Kabab (Full)", 280, "Indian");
 
-addItem("Tawa Mushroom (Half)", 170, "Indian", indianImage);
-addItem("Tawa Mushroom (Full)", 290, "Indian", indianImage);
+addItem("Tawa Mushroom (Half)", 170, "Indian");
+addItem("Tawa Mushroom (Full)", 290, "Indian");
 
-addItem("Keema Chaap (Half)", 170, "Indian", indianImage);
-addItem("Keema Chaap (Full)", 290, "Indian", indianImage);
+addItem("Keema Chaap (Half)", 170, "Indian");
+addItem("Keema Chaap (Full)", 290, "Indian");
 
-addItem("Chaap Kaali Mirch (Full)", 290, "Indian", indianImage);
-addItem("Chaap Korma (Full)", 290, "Indian", indianImage);
+addItem("Chaap Kaali Mirch (Full)", 290, "Indian");
+addItem("Chaap Korma (Full)", 290, "Indian");
 
-addItem("Chaap Takatak (Half)", 170, "Indian", indianImage);
-addItem("Chaap Takatak (Full)", 290, "Indian", indianImage);
+addItem("Chaap Takatak (Half)", 170, "Indian");
+addItem("Chaap Takatak (Full)", 290, "Indian");
 
-addItem("Chaap Takatak Afgani (Half)", 180, "Indian", indianImage);
-addItem("Chaap Takatak Afgani (Full)", 300, "Indian", indianImage);
+addItem("Chaap Takatak Afgani (Half)", 180, "Indian");
+addItem("Chaap Takatak Afgani (Full)", 300, "Indian");
 
-addItem("Paneer takatak Afgani (Half)", 180, "Indian", indianImage);
-addItem("Paneer takatak Afgani (Full)", 300, "Indian", indianImage);
+addItem("Paneer takatak Afgani (Half)", 180, "Indian");
+addItem("Paneer takatak Afgani (Full)", 300, "Indian");
 
-addItem("Chap Laziz (Full)", 290, "Indian", indianImage);
-addItem("Paneer Laziz (Full)", 290, "Indian", indianImage);
+addItem("Chap Laziz (Full)", 290, "Indian");
+addItem("Paneer Laziz (Full)", 290, "Indian");
 
-addItem("Butter Chap (Half)", 170, "Indian", indianImage);
-addItem("Butter Chap (Full)", 290, "Indian", indianImage);
+addItem("Butter Chap (Half)", 170, "Indian");
+addItem("Butter Chap (Full)", 290, "Indian");
 
-addItem("Malai Chap Gravy (Half)", 160, "Indian", indianImage);
-addItem("Malai Chap Gravy (Full)", 280, "Indian", indianImage);
+addItem("Malai Chap Gravy (Half)", 160, "Indian");
+addItem("Malai Chap Gravy (Full)", 280, "Indian");
 
-addItem("Kadai Chap (Half)", 170, "Indian", indianImage);
-addItem("Kadai Chap (Full)", 300, "Indian", indianImage);
+addItem("Kadai Chap (Half)", 170, "Indian");
+addItem("Kadai Chap (Full)", 300, "Indian");
 
-addItem("Masala Chap Gravy (Half)", 170, "Indian", indianImage);
-addItem("Masala Chap Gravy (Full)", 290, "Indian", indianImage);
+addItem("Masala Chap Gravy (Half)", 170, "Indian");
+addItem("Masala Chap Gravy (Full)", 290, "Indian");
 
-addItem("Chap Rogan Juice (Half)", 180, "Indian", indianImage);
-addItem("Chap Rogan Juice (Full)", 290, "Indian", indianImage);
+addItem("Chap Rogan Juice (Half)", 180, "Indian");
+addItem("Chap Rogan Juice (Full)", 290, "Indian");
 
-addItem("Palak Chap Gravy (Half)", 170, "Indian", indianImage);
-addItem("Palak Chap Gravy (Full)", 290, "Indian", indianImage);
+addItem("Palak Chap Gravy (Half)", 170, "Indian");
+addItem("Palak Chap Gravy (Full)", 290, "Indian");
 
 setSection("RICE");
 
-addItem("Veg. Fried Rice", 150, "Indian", indianImage);
-addItem("Chilli Garlic Fried Rice", 150, "Indian", indianImage);
-addItem("Veg. Singapuri Fried Rice", 160, "Indian", indianImage);
-addItem("Mix Veg. Fried Rice", 170, "Indian", indianImage);
-addItem("Paneer Fried Rice", 160, "Indian", indianImage);
-addItem("Jeera Rice", 150, "Indian", indianImage);
-addItem("Matter Pulao", 160, "Indian", indianImage);
-addItem("Veg. Biryani", 180, "Indian", indianImage);
-addItem("Chaap Biryani", 190, "Indian", indianImage);
-addItem("Headrabadi Biryani", 190, "Indian", indianImage);
-addItem("Paneer Pulao", 160, "Indian", indianImage);
-addItem("Veg. Pulao", 160, "Indian", indianImage);
-addItem("Plain Rice", 140, "Indian", indianImage);
+addItem("Veg. Fried Rice", 150, "Indian");
+addItem("Chilli Garlic Fried Rice", 150, "Indian");
+addItem("Veg. Singapuri Fried Rice", 160, "Indian");
+addItem("Mix Veg. Fried Rice", 170, "Indian");
+addItem("Paneer Fried Rice", 160, "Indian");
+addItem("Jeera Rice", 150, "Indian");
+addItem("Matter Pulao", 160, "Indian");
+addItem("Veg. Biryani", 180, "Indian");
+addItem("Chaap Biryani", 190, "Indian");
+addItem("Headrabadi Biryani", 190, "Indian");
+addItem("Paneer Pulao", 160, "Indian");
+addItem("Veg. Pulao", 160, "Indian");
+addItem("Plain Rice", 140, "Indian");
 
 setSection("TANDOORI SNACKS");
 
-addItem("Special Kashmiri Chaap (Half)", 170, "Indian", indianImage);
-addItem("Special Kashmiri Chaap (Full)", 260, "Indian", indianImage);
+addItem("Special Kashmiri Chaap (Half)", 170, "Indian");
+addItem("Special Kashmiri Chaap (Full)", 260, "Indian");
 
-addItem("Chatpati Chaap (Half)", 140, "Indian", indianImage);
-addItem("Chatpati Chaap (Full)", 240, "Indian", indianImage);
+addItem("Chatpati Chaap (Half)", 140, "Indian");
+addItem("Chatpati Chaap (Full)", 240, "Indian");
 
-addItem("Achari Chaap (Half)", 140, "Indian", indianImage);
-addItem("Achari Chaap (Full)", 240, "Indian", indianImage);
+addItem("Achari Chaap (Half)", 140, "Indian");
+addItem("Achari Chaap (Full)", 240, "Indian");
 
-addItem("Malai Paneer Tikka (Half)", 170, "Indian", indianImage);
-addItem("Malai Paneer Tikka (Full)", 260, "Indian", indianImage);
+addItem("Malai Paneer Tikka (Half)", 170, "Indian");
+addItem("Malai Paneer Tikka (Full)", 260, "Indian");
 
-addItem("Tandoori Chaap (Half)", 140, "Indian", indianImage);
-addItem("Tandoori Chaap (Full)", 240, "Indian", indianImage);
+addItem("Tandoori Chaap (Half)", 140, "Indian");
+addItem("Tandoori Chaap (Full)", 240, "Indian");
 
-addItem("Malai Chaap (Half)", 140, "Indian", indianImage);
-addItem("Malai Chaap (Full)", 240, "Indian", indianImage);
+addItem("Malai Chaap (Half)", 140, "Indian");
+addItem("Malai Chaap (Full)", 240, "Indian");
 
-addItem("Stuffed Chaap (Half)", 180, "Indian", indianImage);
-addItem("Stuffed Chaap (Full)", 270, "Indian", indianImage);
+addItem("Stuffed Chaap (Half)", 180, "Indian");
+addItem("Stuffed Chaap (Full)", 270, "Indian");
 
-addItem("Pudina Chaap (Half)", 140, "Indian", indianImage);
-addItem("Pudina Chaap (Full)", 240, "Indian", indianImage);
+addItem("Pudina Chaap (Half)", 140, "Indian");
+addItem("Pudina Chaap (Full)", 240, "Indian");
 
-addItem("Afgani Chaap (Half)", 170, "Indian", indianImage);
-addItem("Afgani Chaap (Full)", 260, "Indian", indianImage);
+addItem("Afgani Chaap (Half)", 170, "Indian");
+addItem("Afgani Chaap (Full)", 260, "Indian");
 
-addItem("Paneer Tikka (Half)", 170, "Indian", indianImage);
-addItem("Paneer Tikka (Full)", 260, "Indian", indianImage);
+addItem("Paneer Tikka (Half)", 170, "Indian");
+addItem("Paneer Tikka (Full)", 260, "Indian");
 
-addItem("Mushroom Tikka (Full)", 240, "Indian", indianImage);
-addItem("Tandoori Veg. Platter (Full)", 750, "Indian", indianImage);
-addItem("Veg. Kabab (Full)", 190, "Indian", indianImage);
-addItem("Tandoori Aloo (Full)", 300, "Indian", indianImage);
+addItem("Mushroom Tikka (Full)", 240, "Indian");
+addItem("Tandoori Veg. Platter (Full)", 750, "Indian");
+addItem("Veg. Kabab (Full)", 190, "Indian");
+addItem("Tandoori Aloo (Full)", 300, "Indian");
 
-addItem("Pudina Paneer Tikka (Half)", 170, "Indian", indianImage);
-addItem("Pudina Paneer Tikka (Full)", 270, "Indian", indianImage);
+addItem("Pudina Paneer Tikka (Half)", 170, "Indian");
+addItem("Pudina Paneer Tikka (Full)", 270, "Indian");
 
-addItem("Achari Paneer Tikka (Half)", 170, "Indian", indianImage);
-addItem("Achari Paneer Tikka (Full)", 270, "Indian", indianImage);
+addItem("Achari Paneer Tikka (Half)", 170, "Indian");
+addItem("Achari Paneer Tikka (Full)", 270, "Indian");
 
 export default menu;
