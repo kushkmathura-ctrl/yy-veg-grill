@@ -87,8 +87,6 @@ const fastFoodImage ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yL
 const chineseImage ="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=600";
 
 
-const indianImage = fastFoodImage;
-
 let id = 1;
 
 const menu = [];
@@ -303,9 +301,9 @@ addItem(
 
 setSection("INDIAN DISHES");
 
-addItem("Paneer Angara (Full)", 350, indianImage);
-addItem("Paneer Jawala (Full)", 350, indianImage);
-addItem("Sev Tamatar (Full)", 220, indianImage);
+addItem("Paneer Angara (Full)", 350, "Indian", indianImage);
+addItem("Paneer Jawala (Full)", 350, "Indian", indianImage);
+addItem("Sev Tamatar (Full)", 220, "Indian", indianImage);
 
 addItem("Sarso ka sag (Seasonable) (Half)", 160, "Indian", indianImage);
 addItem("Sarso ka sag (Seasonable) (Full)", 270, "Indian", indianImage);
