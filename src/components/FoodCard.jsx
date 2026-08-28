@@ -1,9 +1,7 @@
 import "./Popular.css";
 
 function FoodCard({ name, price, image, setCart, setToast }) {
-
   const addToCart = () => {
-
     setCart((prevCart) => {
       const existingItem = prevCart.find(
         (item) => item.name === name
@@ -31,7 +29,6 @@ function FoodCard({ name, price, image, setCart, setToast }) {
       ];
     });
 
-    // Toast Notification
     setToast(`✅ ${name} added to cart`);
 
     setTimeout(() => {
@@ -40,16 +37,28 @@ function FoodCard({ name, price, image, setCart, setToast }) {
   };
 
   return (
-    <div className="food-card">
-      <img src={image} alt={name} />
+    <div className={`food-card ${!image ? "no-image" : ""}`}>
 
-      <h3>{name}</h3>
+      {/* Image sirf tab dikhegi jab image available ho */}
+      {image && (
+        <img
+          src={image}
+          alt={name}
+        />
+      )}
 
-      <p>₹{price}</p>
+      <div className="food-card-content">
 
-      <button onClick={addToCart}>
-        Add to Cart
-      </button>
+        <h3>{name}</h3>
+
+        <p>₹{price}</p>
+
+        <button onClick={addToCart}>
+          Add to Cart
+        </button>
+
+      </div>
+
     </div>
   );
 }

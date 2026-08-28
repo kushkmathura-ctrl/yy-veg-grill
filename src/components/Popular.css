@@ -81,7 +81,6 @@
 
 .popular > h2 {
   text-align: center;
-
   font-size: 36px;
   font-weight: 900;
   color: #222;
@@ -98,7 +97,6 @@
   content: "";
 
   display: block;
-
   width: 60px;
   height: 3px;
 
@@ -112,7 +110,8 @@
     #ff9a62
   );
 
-  box-shadow: 0 3px 10px rgba(255, 87, 34, 0.25);
+  box-shadow:
+    0 3px 10px rgba(255, 87, 34, 0.25);
 }
 
 
@@ -194,6 +193,7 @@
   background: #ffffff;
 
   border: 1px solid #eeeeee;
+
   border-radius: 16px;
 
   overflow: hidden;
@@ -227,9 +227,8 @@
    FOOD IMAGE
 ================================ */
 
-.food-card img {
+.food-card.has-image img {
   width: 100%;
-
   height: 190px;
 
   object-fit: cover;
@@ -240,8 +239,19 @@
     transform 0.4s ease;
 }
 
-.food-card:hover img {
+.food-card.has-image:hover img {
   transform: scale(1.03);
+}
+
+
+/* ================================
+   CARD CONTENT
+================================ */
+
+.food-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 
@@ -325,6 +335,43 @@
 
 
 /* ================================
+   NO IMAGE - DESKTOP
+================================ */
+
+.food-card.no-image {
+  min-height: 155px;
+
+  justify-content: center;
+}
+
+.food-card.no-image .food-card-content {
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+.food-card.no-image h3 {
+  margin: 0 0 8px;
+
+  min-height: auto;
+}
+
+.food-card.no-image p {
+  margin: 0 0 12px;
+}
+
+.food-card.no-image button {
+  width: 150px;
+
+  margin: 0;
+}
+
+
+/* ================================
    TABLET
 ================================ */
 
@@ -375,7 +422,7 @@
 
 /* ================================
    MOBILE
-   ZOMATO STYLE COMPACT CARDS
+   COMPACT ZOMATO STYLE
 ================================ */
 
 @media (max-width: 520px) {
@@ -414,7 +461,7 @@
   }
 
 
-  /* =================================
+  /* ================================
      MOBILE GRID
   ================================= */
 
@@ -427,24 +474,25 @@
   }
 
 
-  /* =================================
-     IMAGE WALA CARD
+  /* ================================
+     IMAGE CARD
      LEFT TEXT + RIGHT IMAGE
   ================================= */
 
-  .food-card:has(img) {
+  .food-card.has-image {
     display: grid;
 
-    grid-template-columns: minmax(0, 1fr) 115px;
+    grid-template-columns:
+      minmax(0, 1fr) 105px;
 
     grid-template-rows:
       auto auto 1fr;
 
     gap: 0 10px;
 
-    min-height: 125px;
+    min-height: 115px;
 
-    padding: 10px;
+    padding: 9px;
 
     border-radius: 14px;
   }
@@ -452,28 +500,40 @@
 
   /* Image */
 
-  .food-card:has(img) img {
+  .food-card.has-image img {
     grid-column: 2;
+
     grid-row: 1 / 4;
 
-    width: 115px;
-    height: 115px;
+    width: 105px;
+
+    height: 105px;
 
     object-fit: cover;
 
-    border-radius: 11px;
+    border-radius: 10px;
+  }
+
+
+  /* Content */
+
+  .food-card.has-image .food-card-content {
+    grid-column: 1;
+
+    grid-row: 1 / 4;
+
+    display: flex;
+
+    flex-direction: column;
   }
 
 
   /* Name */
 
-  .food-card:has(img) h3 {
-    grid-column: 1;
-    grid-row: 1;
+  .food-card.has-image h3 {
+    margin: 3px 0 4px;
 
-    margin: 5px 0 4px;
-
-    font-size: 16px;
+    font-size: 15px;
 
     line-height: 1.25;
 
@@ -483,70 +543,70 @@
 
   /* Price */
 
-  .food-card:has(img) p {
-    grid-column: 1;
-    grid-row: 2;
-
-    margin: 3px 0 6px;
+  .food-card.has-image p {
+    margin: 2px 0 5px;
 
     font-size: 17px;
   }
 
 
-  /* Add button */
+  /* Button */
 
-  .food-card:has(img) button {
-    grid-column: 1;
-    grid-row: 3;
+  .food-card.has-image button {
+    align-self: flex-start;
 
-    align-self: end;
+    width: 115px;
 
-    width: 120px;
+    margin: auto 0 1px;
 
-    margin: 4px 0 2px;
+    padding: 7px 9px;
 
-    padding: 8px 10px;
-
-    font-size: 13px;
+    font-size: 12px;
 
     border-radius: 8px;
   }
 
 
-  /* =================================
-     IMAGE NA HO
-     SUPER COMPACT CARD
+  /* ================================
+     NO IMAGE CARD
   ================================= */
 
-  .food-card:not(:has(img)) {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    min-height: 82px;
+  .food-card.no-image {
+    min-height: 90px;
 
     padding: 12px 15px;
 
     border-radius: 13px;
 
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
     text-align: center;
+  }
+
+
+  .food-card.no-image .food-card-content {
+    width: 100%;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
   }
 
 
   /* Name */
 
-  .food-card:not(:has(img)) h3 {
-
-    margin: 0 0 7px;
+  .food-card.no-image h3 {
+    margin: 0 0 5px;
 
     min-height: auto;
 
-    font-size: 16px;
+    font-size: 15px;
 
     line-height: 1.25;
   }
@@ -554,25 +614,23 @@
 
   /* Price */
 
-  .food-card:not(:has(img)) p {
-
-    margin: 0 0 8px;
+  .food-card.no-image p {
+    margin: 0 0 7px;
 
     font-size: 17px;
   }
 
 
-  /* Add button */
+  /* Button */
 
-  .food-card:not(:has(img)) button {
+  .food-card.no-image button {
+    width: 130px;
 
-    width: 135px;
+    margin: 0;
 
-    margin: 0 auto;
+    padding: 7px 10px;
 
-    padding: 8px 10px;
-
-    font-size: 13px;
+    font-size: 12px;
 
     border-radius: 8px;
   }
