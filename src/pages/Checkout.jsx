@@ -1,6 +1,6 @@
 import "./Checkout.css";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Checkout({ cart }) {
@@ -12,6 +12,8 @@ function Checkout({ cart }) {
   const [address, setAddress] = useState("");
   const [payment, setPayment] = useState("Cash");
   const [instructions, setInstructions] = useState("");
+  const [placingOrder, setPlacingOrder] = useState(false);
+const orderLock = useRef(false);
 
   const subtotal = cart.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -23,47 +25,67 @@ function Checkout({ cart }) {
 const grandTotal = Math.round(subtotal + gst);
 
   const handlePlaceOrder = async () => {
-    if (!name || !phone || !tableNumber || !address) {
-      alert("Please fill all details.");
-      return;
-    }
+  if (!name || !phone || !tableNumber || !address) {
+    alert("Please fill all details.");
+    return;
+  }
 
-    try {
-      const response = await axios.post(
-  `${import.meta.env.VITE_API_URL}/api/orders`,
-        {
-          customer: name,
-          phone,
-          tableNumber,
-          address,
-          payment,
-          instructions,
+  // Prevent multiple clicks / duplicate orders
+  if (orderLock.current || placingOrder) {
+    return;
+  }
 
-          items: cart.map((item) => ({
-            name: item.name,
-            qty: item.quantity,
-            price: item.price,
-          })),
+  orderLock.current = true;
+  setPlacingOrder(true);
 
-          total: grandTotal,
-        }
-      );
+  // One unique ID for this order attempt
+  const orderRequestId = crypto.randomUUID();
 
-      localStorage.setItem("customerPhone", phone);
+  try {
+    const response = await axios.post(
+      `${import.meta.env.VITE_API_URL}/api/orders`,
+      {
+        orderRequestId,
 
-      alert(response.data.message);
+        customer: name,
+        phone,
+        tableNumber,
+        address,
+        payment,
+        instructions,
 
-      navigate("/success", {
-        state: {
-          order: response.data.order,
-        },
-      });
-    } catch (error) {
-      console.log(error.response?.data || error);
+        items: cart.map((item) => ({
+          name: item.name,
+          qty: item.quantity,
+          price: item.price,
+        })),
 
-      alert("Server Error!");
-    }
-  };
+        total: grandTotal,
+      }
+    );
+
+    localStorage.setItem("customerPhone", phone);
+
+    alert(response.data.message);
+
+    navigate("/success", {
+      state: {
+        order: response.data.order,
+      },
+    });
+  } catch (error) {
+    console.log(error.response?.data || error);
+
+    alert(
+      error.response?.data?.message ||
+      "Unable to place order. Please try again."
+    );
+
+    // Allow retry if request actually failed
+    orderLock.current = false;
+    setPlacingOrder(false);
+  }
+};
 
   return (
     <div className="checkout-page">
@@ -250,12 +272,13 @@ const grandTotal = Math.round(subtotal + gst);
         </>
       )}
 
-      <button
-        className="checkout-btn"
-        onClick={handlePlaceOrder}
-      >
-        Place Order
-      </button>
+     <button
+  className="checkout-btn"
+  onClick={handlePlaceOrder}
+  disabled={placingOrder}
+>
+  {placingOrder ? "Placing Order..." : "Place Order"}
+</button>
 
     </div>
   );

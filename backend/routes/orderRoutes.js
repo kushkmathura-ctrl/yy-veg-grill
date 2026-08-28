@@ -6,36 +6,60 @@ const Order = require("../models/Order");
 // Create Order
 router.post("/", async (req, res) => {
   try {
+    const { orderRequestId } = req.body;
+
+    if (!orderRequestId) {
+      return res.status(400).json({
+        success: false,
+        message: "Order request ID is required",
+      });
+    }
+
+    // Check if this exact order request was already processed
+    const existingOrder = await Order.findOne({ orderRequestId });
+
+    if (existingOrder) {
+      return res.status(200).json({
+        success: true,
+        message: "Order already placed",
+        order: existingOrder,
+      });
+    }
+
     const order = new Order(req.body);
 
     await order.save();
 
-   req.app.get("io").emit("NEW_ORDER", order);
+    req.app.get("io").emit("NEW_ORDER", order);
+
     res.status(201).json({
       success: true,
       message: "Order Placed Successfully",
       order,
     });
+
   } catch (err) {
     console.log(err);
+
+    // Duplicate request reached MongoDB at the same time
+    if (err.code === 11000) {
+      const existingOrder = await Order.findOne({
+        orderRequestId: req.body.orderRequestId,
+      });
+
+      return res.status(200).json({
+        success: true,
+        message: "Order already placed",
+        order: existingOrder,
+      });
+    }
 
     res.status(500).json({
       success: false,
       message: err.message,
     });
   }
-});router.get("/:id", async (req, res) => {
-  try {
-    const order = await Order.findById(req.params.id);
-
-    res.json(order);
-  } catch (err) {
-    res.status(500).json({
-      message: err.message,
-    });
-  }
 });
-
 
 // Get All Orders
 router.get("/", async (req, res) => {
