@@ -37,12 +37,12 @@ function FoodCard({ name, price, image, setCart, setToast }) {
   };
 
   return (
-    <div className={`food-card ${!image ? "no-image" : ""}`}>
+    <div className={`food-card ${image ? "has-image" : "no-image"}`}>
+      
       {image && (
         <img
           src={image}
           alt={name}
-          className="food-card-image"
         />
       )}
 
@@ -55,6 +55,7 @@ function FoodCard({ name, price, image, setCart, setToast }) {
           Add to Cart
         </button>
       </div>
+
     </div>
   );
 }

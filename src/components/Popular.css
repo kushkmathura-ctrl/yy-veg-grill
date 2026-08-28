@@ -635,22 +635,9 @@
     border-radius: 8px;
   }
 }
-.food-card.no-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 20px;
-  min-height: 250px;
-}
 
 .food-card.no-image .food-card-content {
   width: 100%;
   text-align: center;
 }
 
-.food-card-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
